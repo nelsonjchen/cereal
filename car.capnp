@@ -394,6 +394,7 @@ struct CarParams {
   steerRateCost @33 :Float32; # Lateral MPC cost on steering rate
   steerControlType @34 :SteerControlType;
   radarOffCan @35 :Bool; # True when radar objects aren't visible on CAN
+  cruiseStateSpeedScalar @51 :Float32; # Smearing scalar for CruiseState's speed that can be overridden per make/model in OP and not in the DBC. Defaults to 1 otherwise.
 
   steerActuatorDelay @36 :Float32; # Steering wheel actuator delay in seconds
   openpilotLongitudinalControl @37 :Bool; # is openpilot doing the longitudinal control?
